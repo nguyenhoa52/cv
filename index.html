@@ -3,68 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Hoa Nguyen | Application Engineer II Portfolio</title>
     <link rel="icon" href="favicon.ico">
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@300;400;500&family=Sacramento&display=swap" rel="stylesheet">
+    
+    <!-- Custom Material CSS -->
+    <link rel="stylesheet" href="css/material.css">
+    <style>
+        .ai-chip { background: #fce4ec; color: #d81b60; font-weight: 700; border: 1px solid #f8bbd0; }
+        .edu-info { margin-top: 0.5rem; font-weight: 500; color: var(--primary); }
+    </style>
 </head>
 <body>
 
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud.png" alt="">
-        <h1>I'm Hoa.</h1>
-        <h2>a <span class="pro">pro</span>grammer.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="">
-        <img src="images/mountain.png" alt="">
-    </div>
-    
-    <div class="middle-container">
-        <div class="profile">
-          <img src="images/profile-pic-modified.png" alt="Hoa PFP" width="200" height="200">
-          <h2>Hello.</h2>
-          <p>I am an Appian and Web Developer</p>
-          <p><em>M.S. Computer Engineering, </em><strong>Drexel University</strong></em>, 2020</p>
-          <p><em>Application Engineer II, </em><strong>Vanguard</strong></p>
+    <!-- Navigation -->
+    <nav>
+        <div class="brand">Hoa Nguyen</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
         </div>
-        <hr>
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="skill-row">
-            <img class="code-img" src="images/code.png" alt="code" width="200" height="200">
-            <h3>Design & Development</h3>
-            <p>I enjoy a challenging problem and delivering high-quality results and Beautiful UI.
-                With expertise in <b>Java</b>, <b>Python</b>, <b>SQL</b>, <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b> programming languages, 
-               I have experience in <b>Appian</b> full stack development building internal-facing app,
-                utilizing <b>Agile</b> development methodologies with knowledge in <b>AWS</b>, <b>CICD</b> pipelines and <b>API</b> integrations.</p>
-          </div>
-          <div class="skill-row">
-            <img class="game-img" src="images/game-controller.png" alt="gaming" width="200" height="200">
-            <h3>My Hobbies</h3>
-            <p>I am an active and adventurous individual who enjoys a variety of outdoor activities. 
-              <b>Hiking</b>, <b>Camping</b>, and <b>Water Sports</b> allow me to indulge in my love for nature and exploration. 
-              Riding my <b>Motorcycle</b> and flying <b>Planes</b> gives me a sense of freedom and excitement. 
-              In my downtime, I enjoy playing <b>Video Games</b>, which not only helps me relax but also improves my problem-solving skills. 
-              I also value fitness and maintaining a healthy lifestyle, which is why I make regular visits to the <b>Gym</b>.</p>
-          </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="about">
+        <img src="images/profile-pic-modified.png" alt="Hoa Nguyen Profile Picture" class="profile-img">
+        <h1 class="brand">I'm Hoa.</h1>
+        <h2>Application Engineer II @ The Vanguard Group</h2>
+        <p>I am a full-stack engineer specializing in modernizing legacy systems and pioneering AI developer tooling. Based in Malvern, PA.</p>
+        <div style="margin-top: 1rem;">
+            <a href="http://hoacv.com" style="color: var(--primary); text-decoration: none; margin-right: 15px;">🌐 hoacv.com</a>
+            <a href="mailto:nguyenhoa52@gmail.com" style="color: var(--primary); text-decoration: none;">📧 nguyenhoa52@gmail.com</a>
         </div>
-        <hr>
-        <div class="contact-me">
-          <h2>Get In Touch</h2>
-          <h3>If you're looking for a motivated Programmer.</h3>
-          <p class="contact-msg">Reach out to me and let's chat!</p>
-          <a class="btn" href="mailto:nguyenhoa52@gmail.com">CONTACT ME</a>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="card-grid">
+            <!-- App Engineer II -->
+            <div class="card">
+                <span class="date">Jan 2022 - Present</span>
+                <h3>Application Engineer II</h3>
+                <p><strong>The Vanguard Group</strong></p>
+                <ul>
+                    <li>Championed AI developer tooling including <strong>GitHub Copilot</strong>, <strong>Claude Code</strong>, and <strong>Gemini CLI</strong>.</li>
+                    <li>Designed Java, Python, and TypeScript APIs to migrate legacy ELF platforms.</li>
+                    <li>Pioneered GraphQL implementation and modernized UI with TypeScript and Node.</li>
+                </ul>
+            </div>
+            <!-- App Engineer I -->
+            <div class="card">
+                <span class="date">July 2020 - Jan 2022</span>
+                <h3>Application Engineer I</h3>
+                <p><strong>The Vanguard Group</strong></p>
+                <ul>
+                    <li>Built low-code Appian applications for BPM initiatives and AWD legacy retirements.</li>
+                    <li>Developed RESTful APIs and CI/CD pipelines within the Appian environment.</li>
+                </ul>
+            </div>
+            <!-- Developer Randstad -->
+            <div class="card">
+                <span class="date">April 2019 - Sep 2019</span>
+                <h3>Developer</h3>
+                <p><strong>Randstad Holding / Vanguard</strong></p>
+                <ul>
+                    <li>Developed cloud document storage solutions using <strong>AWS S3</strong> and RESTful microservices.</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/nguyenhoa52/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/">Twitter</a>
-        <a class="footer-link" href="https://www.google.com/">Website</a>
-        <p class="copyright">© Hoa Nguyen.</p>
-      </div>
-      
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="background-color: #f1f3f4;">
+        <h2 class="section-title">Skills & Abilities</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>AI & Automation</h3>
+                <p>Advanced integration of AI agents into the developer workflow.</p>
+                <div class="skill-tags">
+                    <span class="chip ai-chip">Claude Code</span>
+                    <span class="chip ai-chip">Gemini CLI</span>
+                    <span class="chip ai-chip">GitHub Copilot</span>
+                    <span class="chip ai-chip">M365 Copilot</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Backend & API</h3>
+                <div class="skill-tags">
+                    <span class="chip">Java</span>
+                    <span class="chip">Python</span>
+                    <span class="chip">GraphQL</span>
+                    <span class="chip">REST API</span>
+                    <span class="chip">SQL</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Frontend & UI</h3>
+                <div class="skill-tags">
+                    <span class="chip">Angular</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">HTML/CSS/SCSS</span>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Platforms & Tools</h3>
+                <div class="skill-tags">
+                    <span class="chip">Appian</span>
+                    <span class="chip">AWS</span>
+                    <span class="chip">GitHub</span>
+                    <span class="chip">Bamboo</span>
+                    <span class="chip">CI/CD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>M.S. in Computer Engineering</h3>
+                <p><strong>Drexel University</strong></p>
+                <p class="date">Graduated June 2020</p>
+                <p>Philadelphia, Pennsylvania</p>
+            </div>
+            <div class="card">
+                <h3>B.S. in Computer Engineering</h3>
+                <p><strong>Drexel University</strong></p>
+                <p class="date">Graduated June 2020</p>
+                <p>Philadelphia, Pennsylvania</p>
+            </div>
+            <div class="card">
+                <h3>Minor in Computer Science</h3>
+                <p><strong>Drexel University</strong></p>
+                <p class="date">Graduated June 2020</p>
+                <p>Philadelphia, Pennsylvania</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me FAB -->
+    <a href="mailto:nguyenhoa52@gmail.com" class="fab" title="Contact Me">📧</a>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Hoa Nguyen. Built with Material Design principles.</p>
+        <p>AWD/ELF Retirements | Data Migrations Specialist</p>
+    </footer>
+
 </body>
 </html>
