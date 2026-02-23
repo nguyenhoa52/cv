@@ -1,0 +1,229 @@
+/* material.css - Modernized Material Design System for CV */
+
+:root {
+    --primary: #1a73e8;
+    --primary-variant: #1557b0;
+    --secondary: #00bfa5;
+    --background: #f8f9fa;
+    --surface: #ffffff;
+    --on-surface: #202124;
+    --on-surface-medium: #5f6368;
+    --shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --radius: 8px;
+    --transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', 'Montserrat', sans-serif;
+    background-color: var(--background);
+    color: var(--on-surface);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    color: var(--on-surface);
+}
+
+.brand {
+    font-family: 'Sacramento', cursive;
+    color: var(--primary);
+}
+
+nav .brand {
+    font-size: 2rem;
+}
+
+.hero .brand {
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Navigation --- */
+nav {
+    background: var(--surface);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow-1);
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--on-surface-medium);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 100px 10%;
+    text-align: center;
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-2);
+    margin-bottom: 2rem;
+    border: 4px solid var(--surface);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--on-surface-medium);
+    max-width: 600px;
+}
+
+/* --- Sections & Cards --- */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: var(--secondary);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--surface);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-1);
+    transition: var(--transition);
+    border-top: 4px solid transparent;
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: var(--shadow-3);
+    transform: translateY(-5px);
+    border-top-color: var(--primary);
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.card .date {
+    font-size: 0.9rem;
+    color: var(--on-surface-medium);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card ul {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    color: var(--on-surface-medium);
+}
+
+/* --- Skills --- */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+}
+
+.chip {
+    background: #e8f0fe;
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* --- Footer & FAB --- */
+footer {
+    background: var(--on-surface);
+    color: white;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.fab {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 56px;
+    height: 56px;
+    background: var(--secondary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-2);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+
+.fab:hover {
+    box-shadow: var(--shadow-3);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    nav { padding: 0 5%; }
+    .hero { padding: 60px 5%; }
+    section { padding: 60px 5%; }
+}
